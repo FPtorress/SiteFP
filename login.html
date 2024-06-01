@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script> <!-- Adicione o atributo 'defer' para garantir que o JavaScript seja carregado após o HTML -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+        <nav class="nav-centralizado">
+            <ul>
+                <button type="button" class="botao-enviar">Login</button>
+            <button type="button" class="botao-enviar" onclick="location.href='registrar.html'">Registrar</button>
+            </ul>
+        </nav>
+    <video autoplay loop muted playsinline>
+        <source src="vídeo fundo 1.mp4" type="video/mp4">
+    </video>
+    <section id="login" class="form-centralizado">
+        <form id="login-form">
+            <div class="form-group">
+                <label for="nomeOuEmail">Nome ou E-mail</label>
+                <input type="text" id="nomeOuEmail" name="nomeOuEmail" placeholder="Seu Nome ou E-mail:" required>
+                <small class="error" id="nome-error"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Senha</label>:</label>
+              <input type="password" id="senha" name="senha" placeholder="Sua Senha:" required>
+              <small class="error" id="senha-error"></small>
+            </div>
+            <button type="submit" class="botao-enviar">
+                Enviar
+                <span class="seta-vermelha"></span>
+              </button>
+          </form>
+    </section>
+        <footer>
+            <a href="https://api.whatsapp.com/send?" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/e.dit_fp/" target="_blank">
+                <i class="fab fa-instagram"></i>
+                
+            </a>
+            <a href="https://github.com/projects" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <span class="fp">@FP</span><span class="torres">torres</span>
+        </footer>
+</body>
+</html>
